@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Mi portafolio, pagina principal">
+        <meta name="keywords" content="tRLP, web designer, portfolio, green">
+        <meta name="author" content="">
+        <link rel="icon" type="image/png" href="assets/img/icon.png" />
+
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        
+        <title>Carlos Calderón · Bienvenido a mi portafolio online</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#home" class="nav__logo"><img src="assets/img/logo.png" alt="" class="logo_img"></a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active">Inicio</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">Sobre Mi</a></li>
+                        <li class="nav__item"><a href="#services" class="nav__link">Servicios</a></li>
+                        <li class="nav__item"><a href="#portfolio" class="nav__link">Portafolio</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Habilidades</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Hola,<br>yo soy <span class="home__title-color">Carlos</span>,<br> un diseñador web</h1>
+
+                    <a href="mailto:ccalderons.studyandwork@gmail.com" class="button lato-bold"><i class='bx bx-mail-send'></i> Contacto</a>&nbsp;&nbsp;&nbsp;
+                    <a id="boton_copy" href="" target="_self" class="button lato-bold"><i class='bx bx-copy-alt'></i></a>
+                    <div id="texto_copy" class="">ccalderons.studyandwork@gmail.com</div>
+                    <script>
+                        document.getElementById('boton_copy').addEventListener('click', copiarAlPortapapeles);
+                        function copiarAlPortapapeles(ev) {
+                            // Obtener contenido del div oculto
+                            let contenido = document.getElementById('texto_copy').textContent;
+                            // Crear input
+                            let input = document.createElement('input');
+                            // Asignar contenido
+                            input.value = contenido;
+                            // Agregar input a documento
+                            document.body.appendChild(input);
+                            // Seleccionar contenido
+                            input.select();
+                            // Copiar
+                            document.execCommand('copy');
+                            // Eliminar input
+                            input.remove();
+                            alert("Email copiado al portapapeles");
+                        }
+                    </script>
+                    <br>
+                    <br>
+                    <a href="assets/pdf/cv_carlos_calderon_website.pdf" target="_blank" class="button lato-bold"><i class='bx bx-file'></i> Descargar CV</a>
+                    
+                </div>
+
+                <div class="home__social">
+                    <a href="https://www.linkedin.com/in/carlos-calderon-soriano" target="_blank" class="home__social-icon"><i class='bx bxl-linkedin bx-md bx-tada-hover'></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="https://www.behance.net/carloscald7f32" target="_blank" class="home__social-icon"><i class='bx bxl-github bx-md bx-tada-hover' ></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="https://dribbble.com/charlie_38king" target="_blank" class="home__social-icon"><i class='bx bxl-codepen bx-md bx-tada-hover' ></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="https://github.com/charlie38king" target="_blank" class="home__social-icon"><i class='bx bxl-behance bx-md bx-tada-hover' ></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="https://codepen.io/charlie_38king" target="_blank" class="home__social-icon"><i class='bx bxl-dribbble bx-md bx-tada-hover'></i></a>
+                </div>
+
+                <div class="home__img">    
+                    <img src="assets/img/profilexxx.png" alt="">
+                </div>
+            </section>
+
+            <!--===== ABOUT =====-->
+            <section class="about section " id="about">
+                <h2 class="section-title">Sobre Mí</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="assets/img/about_a.jpg" alt="">
+                    </div>
+                    
+                    <div>
+                        <h2 class="about__subtitle">Mi nombre es <span class="my_name">Carlos Calderón</span></h2>
+                        <p class="about__text lato-regular">Soy un ingeniero de telecomunicaciones y electrónica, graduado en la
+                                               <a href="https://cujae.edu.cu/" target="_blank" class="lato-bold">
+                                               <span class="my_name">Universidad Tecnológica de La Habana</span>
+                                               </a>, con
+                                               <span class="my_name">
+                                               <script type=text/javascript>
+                                               const firstYear = 2018;
+                                               var d = new Date();
+                                               document.write(d.getFullYear()-firstYear);
+                                               </script>
+                                               años de experiencia</span> trabajando en el sector de las telecomunicaciones y las tecnologías de la información. 
+                                               Desarrollo infraestructuras de red y aseguro servicios de soporte de TI. Esta experiencia me ha brindado una base sólida en el 
+                                               campo en constante evolución de la <span class="my_name">ingeniería de redes</span>, lo que me permite mantenerme al día con las últimas tecnologías y tendencias.
+                                               <br>
+                                               <br>
+                                               Además de mi trabajo de ingeniería, soy un entusiasta del <span class="my_name">diseño</span> y el <span class="my_name">marketing digital</span>. 
+                                               A lo largo de los años, he desarrollado una cartera de pequeños proyectos freelance en diseño web y gráfico. 
+                                               Me esfuerzo por crear soluciones visuales que ayuden a las empresas a llegar a su público objetivo e interactuar con sus clientes.
+                                               <br>
+                                               <br>
+                                               Tengo un <span class="my_name">espíritu emprendedor</span> y pasión por los <span class="my_name">proyectos desaﬁantes</span>. 
+                                               Pretendo algún día crear mi propio estudio de diseño de web.                                            
+                                            </p>           
+                    </div>                                   
+                </div>
+            </section>
+
+
+
+            <!--===== Servicios =====-->
+            <section class="work section" id="services">
+                <h2 class="section-title">Servicios</h2>
+                <div class="work__container bd-grid">
+                    <div class="work__img">
+                        <img src="assets/img/01webdesg.jpg" alt="">
+                        <h4 class="section-title-h4 serv_text">Diseño Web</h4>
+                        
+                    </div>
+                    <div class="work__img">
+                        <img src="assets/img/02branding.jpg" alt="">
+                        <h4 class="section-title-h4 serv_text">Diseño de Marca</h4>
+                        
+                    </div>
+                    <div class="work__img">
+                        <img src="assets/img/06commerce.jpg" alt="">
+                        <h4 class="section-title-h4 serv_text">Desarrollo e-Commerce</h4>
+                        
+                    </div>
+                    <div class="work__img">
+                        <img src="assets/img/09layout.jpg" alt="">
+                        <h4 class="section-title-h4 serv_text">Maquetación Web</h4>
+                        
+                    </div>
+                    <div class="work__img">
+                        <img src="assets/img/04hosting.jpg" alt="">
+                        <h4 class="section-title-h4 serv_text">Gestión de Hosting</h4>
+                        
+                    </div>
+                    <div class="work__img">
+                        <img src="assets/img/07copy.jpg" alt="">
+                        <h4 class="section-title-h4 serv_text">Servicios de Copywriting</h4>
+                        
+                    </div>
+                </div>
+            </section>
+
+
+
+
+            <!--===== TRABAJO MAS RECIENTE + PORTAFOLIO =====-->
+            <section class="work section" id="portfolio">
+                <h2 class="section-title">Mi Proyecto Más Reciente</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img__lastproject">
+                        <img src="assets/img/lastproject.jpg" alt="">
+                    </div>
+                    
+                    <div>
+                        <h2 class="about__subtitle">Nombre de proyecto: <span class="my_name">WeRemodel</span></h2>
+                        <p class="about__text lato-regular">
+                            Actualmente estoy trabajando en una demo para un <span class="my_name">proyecto personal</span>
+                            acerca de una empresa de remodelaciones, donde pueda incorporar las habilidades que estoy aprendiendo.
+                            <br>
+                            <br>
+                            <span class="my_name lato-bold">WeRemodel</span> es una cadena de tiendas que vende productos de construcción enfocado 
+                            en la remodelación de espacios. Su principal producto se destaca por su calidad superior y conveniencia. 
+                            Está orientado a un <span class="my_name">público variado</span> que disfrute de los temas de construcción y decoración. 
+                            Se quiere transmitir una sensación de entusiasmo y al mismo tiempo ser amables.
+                            <br>
+                            <br>
+                            Se debe crear un <span class="my_name">sitio web</span> que proporcione principalmente información. El objetivo 
+                            es crear una página de destino que <span class="my_name">maximice las conversiones</span>. Además de la página 
+                            de inicio, el sitio web necesitará una página de información, páginas de productos y una página de política de 
+                            privacidad. La página de destino debe tener una sección Nuestros Valores. Se prefiere un 
+                            <span class="my_name">diseño monocromático</span> y que emplee el color de la marca, que es el blanco.
+                        </p>           
+                    </div>                                   
+                </div>
+                <br>                
+            <!--</section>
+            ===== Portafolio =====
+            <section class="work section" id="portfolio">-->
+                <h2 class="section-title">Portafolio</h2>
+
+                <div class="work__container bd-grid">
+                    <div class="work__img">
+                        <img src="assets/img/project01.jpg" alt="">
+                        <h4 class="section-title-h4 lato-bold">Foodie Project</h4>
+                        <p class="about__text section-title-h4">
+                            <a href="" target="_blank" class="home__social-icon"><i class='bx bxl-behance' ></i></a>
+                            <a href="" target="_blank" class="home__social-icon"><i class='bx bxl-dribbble' ></i></a>
+                            <a href="" target="_blank" class="home__social-icon"><i class='bx bxl-github' ></i></a>      
+                        </p>
+                    </div>
+                    <div class="work__img">
+                        <img src="assets/img/project02.jpg" alt="">
+                        <h4 class="section-title-h4 lato-bold">DR1 Project</h4>
+                        <p class="about__text section-title-h4">
+                            <a href="" target="_blank" class="home__social-icon"><i class='bx bxl-behance' ></i></a>
+                            <a href="" target="_blank" class="home__social-icon"><i class='bx bxl-dribbble' ></i></a>
+                            <a href="" target="_blank" class="home__social-icon"><i class='bx bxl-github' ></i></a>      
+                        </p>
+                    </div>
+                    <div class="work__img">
+                        <img src="assets/img/project03.png" alt="">
+                        <h4 class="section-title-h4 lato-bold">Madridista Project</h4>
+                        <p class="about__text section-title-h4">
+                            <a href="" target="_blank" class="home__social-icon"><i class='bx bxl-behance' ></i></a>
+                            <a href="" target="_blank" class="home__social-icon"><i class='bx bxl-dribbble' ></i></a>
+                            <a href="" target="_blank" class="home__social-icon"><i class='bx bxl-github' ></i></a>      
+                        </p>
+                    </div>
+                    <div class="work__img">
+                        <img src="assets/img/project04.jpg" alt="">
+                        <h4 class="section-title-h4 lato-bold">Jungle House Project</h4>
+                        <p class="about__text section-title-h4">
+                            <a href="https://www.instagram.com/p/C5PRASfM83e/?igsh=MTBvbGJjZzhrbTVuNQ==" target="_blank" class="home__social-icon"><i class='bx bxl-instagram-alt'></i></a>&nbsp;
+                            <a href="https://twitter.com/the_rothlogan/status/1774951328676012259?t=tH33F7DNvkzoRBCNKJHo2w&s=19" target="_blank" class="home__social-icon"><i class='bx bxl-twitter'></i></a>
+                            <a href="https://www.tumblr.com/the-rothlogan/746604987622227968?source=share" target="_blank" class="home__social-icon"><i class='bx bxl-tumblr'></i></a>     
+                        </p>
+                    </div>
+                    <div class="work__img">
+                        <img src="assets/img/project05.jpg" alt="">
+                        <h4 class="section-title-h4 lato-bold">Kaitin D Project</h4>
+                        <p class="about__text section-title-h4">
+                            <a href="" target="_blank" class="home__social-icon"><i class='bx bxl-behance' ></i></a>
+                            <a href="" target="_blank" class="home__social-icon"><i class='bx bxl-dribbble' ></i></a>
+                            <a href="" target="_blank" class="home__social-icon"><i class='bx bxl-github' ></i></a>     
+                        </p>
+                    </div>
+                    <div class="work__img">
+                        <img src="assets/img/project06.jpg" alt="">
+                        <h4 class="section-title-h4 lato-bold">Lessonnette Project</h4>
+                        <p class="about__text section-title-h4">
+                            <a href="" target="_blank" class="home__social-icon"><i class='bx bxl-behance' ></i></a>
+                            <a href="" target="_blank" class="home__social-icon"><i class='bx bxl-dribbble' ></i></a>
+                            <a href="" target="_blank" class="home__social-icon"><i class='bx bxl-github' ></i></a>   
+                        </p>
+                    </div>
+                    <div class="work__img">
+                        <img src="assets/img/project07.jpg" alt="">
+                        <h4 class="section-title-h4 lato-bold">Homie Project</h4>
+                        <p class="about__text section-title-h4">
+                            <a href="https://www.instagram.com/p/C5hGBlUPT3u/?igsh=aXNsMGNxbXc3bTQx==" target="_blank" class="home__social-icon"><i class='bx bxl-instagram-alt' ></i></a>&nbsp;
+                            <a href="https://twitter.com/the_rothlogan/status/1777463956979773644?t=yNw4MzJy6qEbmRm8A7jlOg&s=19" target="_blank" class="home__social-icon"><i class='bx bxl-twitter' ></i></a>
+                            <a href="https://www.tumblr.com/the-rothlogan/747232464512155648/homie-project?source=share" target="_blank" class="home__social-icon"><i class='bx bxl-tumblr' ></i></a>      
+                        </p>
+                    </div>
+                    <div class="work__img">
+                        <img src="assets/img/project08.jpg" alt="">
+                        <h4 class="section-title-h4 lato-bold">In-Pot Project</h4>
+                        <p class="about__text section-title-h4">
+                            <a href="" target="_blank" class="home__social-icon"><i class='bx bxl-behance' ></i></a>
+                            <a href="" target="_blank" class="home__social-icon"><i class='bx bxl-dribbble' ></i></a>
+                            <a href="" target="_blank" class="home__social-icon"><i class='bx bxl-github' ></i></a>     
+                        </p>
+                    </div>
+                    <div class="work__img">
+                        <img src="assets/img/project09.jpg" alt="">
+                        <h4 class="section-title-h4 lato-bold">Cymbal Clap Project</h4>
+                        <p class="about__text section-title-h4">
+                            <a href="https://www.instagram.com/p/C486wDoPQSx/?igsh=MWR2aGQxdDZvYnU2aQ==" target="_blank" class="home__social-icon"><i class='bx bxl-instagram-alt'></i></a>&nbsp;
+                            <a href="https://twitter.com/the_rothlogan/status/1772374746627211573?t=WkqfUjc1tvwdWf8bkzb-dA&s=19" target="_blank" class="home__social-icon"><i class='bx bxl-twitter'></i></a>
+                            <a href="https://www.tumblr.com/the-rothlogan/745958697243705344/this-is-our-first-project-to-post-a-music-library?source=share" target="_blank" class="home__social-icon"><i class='bx bxl-tumblr'></i></a> 
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Habilidades</h2>
+
+                <div class="skills__container bd-grid">          
+                    <div>              
+                        <img src="assets/img/techskills.jpg" alt="" class="skills__img">
+                    </div>
+
+                    <div>
+                        <h2 class="skills__subtitle">Habilidades Técnicas</h2>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-html5 skills__icon'></i>
+                                <span class="skills__name lato-bold">HTML5 + CSS3</span>
+                            </div>
+                            <div class="skills__bar skills__html">
+
+                            </div>
+                            <div>
+                                <span class="skills__percentage">85%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bx-devices skills__icon'></i>
+                                <span class="skills__name lato-bold">Diseño UX/UI</span>
+                            </div>
+                            <div class="skills__bar skills__uxui">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">85%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bx-pencil skills__icon' ></i>
+                                <span class="skills__name lato-bold">Prototipado / Wireframing</span>
+                            </div>
+                            <div class="skills__bar skills__prot">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">70%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-javascript skills__icon'></i>
+                                <span class="skills__name lato-bold">JavaScript</span>
+                            </div>
+                            <div class="skills__bar skills__js">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">65%</span>
+                            </div>
+                        </div>
+
+
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bx-line-chart skills__icon'></i>
+                                <span class="skills__name lato-bold">SEO</span>
+                            </div>
+                            <div class="skills__bar skills__seo">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">60%</span>
+                            </div>
+                        </div>
+
+
+
+
+
+                    </div>
+                    
+                    
+                </div>
+
+
+                <br>
+                <br>
+
+
+                <div class="skills__container bd-grid">          
+                    <div>
+                        <h2 class="skills__subtitle">Herramientas & Software</h2>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-figma skills__icon'></i>
+                                <span class="skills__name lato-bold">Figma</span>
+                            </div>
+                            <div class="skills__bar skills__figma">
+
+                            </div>
+                            <div>
+                                <span class="skills__percentage">85%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bx-layout skills__icon'></i>
+                                <span class="skills__name lato-bold">Lunacy</span>
+                            </div>
+                            <div class="skills__bar skills__lunacy">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">85%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-adobe skills__icon' ></i>
+                                <span class="skills__name lato-bold">Adobe Suite</span>
+                            </div>
+                            <div class="skills__bar skills__adobe">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">65%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-wordpress skills__icon'></i>
+                                <span class="skills__name lato-bold">Wordpress</span>
+                            </div>
+                            <div class="skills__bar skills__wordpress">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">70%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-shopify skills__icon'></i>
+                                <span class="skills__name lato-bold">Shopify</span>
+                            </div>
+                            <div class="skills__bar skills__shopify">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">65%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>              
+                        <img src="assets/img/softwareskills.jpg" alt="" class="skills__img">
+                    </div>
+                </div>
+
+
+                <br>
+                <br>
+
+
+                <div class="skills__container bd-grid">   
+                    <div>              
+                        <img src="assets/img/softskills.jpg" alt="" class="skills__img">
+                    </div>
+                    
+                    <div>
+                        <h2 class="skills__subtitle">Habilidades Blandas</h2>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bx-bulb skills__icon'></i>
+                                <span class="skills__name lato-bold">Creatividad</span>
+                            </div>
+                            <div class="skills__bar skills__creat">
+
+                            </div>
+                            <div>
+                                <span class="skills__percentage">90%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bx-group skills__icon'></i>
+                                <span class="skills__name lato-bold">Trabajo en equipo</span>
+                            </div>
+                            <div class="skills__bar skills__equipo">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">80%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bx-task skills__icon' ></i>
+                                <span class="skills__name lato-bold">Resolución de problemas</span>
+                            </div>
+                            <div class="skills__bar skills__prob">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">85%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bx-hive skills__icon'></i>
+                                <span class="skills__name lato-bold">Adaptabilidad</span>
+                            </div>
+                            <div class="skills__bar skills__adapt">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">70%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bx-user-voice skills__icon'></i>
+                                <span class="skills__name lato-bold">Comunicatividad</span>
+                            </div>
+                            <div class="skills__bar skills__comunic">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">70%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <br>
+                <br>
+
+
+                <div class="skills__container bd-grid">          
+                    <div>
+                        <h2 class="skills__subtitle">Aprendiendo Ahora</h2>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-react skills__icon'></i>
+                                <span class="skills__name lato-bold">React</span>
+                            </div>
+                            <div class="skills__bar skills__react">
+
+                            </div>
+                            <div>
+                                <span class="skills__percentage">25%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-nodejs skills__icon'></i>
+                                <span class="skills__name lato-bold">Node JS</span>
+                            </div>
+                            <div class="skills__bar skills__node">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">10%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bx-album skills__icon' ></i>
+                                <span class="skills__name lato-bold">FL Studio</span>
+                            </div>
+                            <div class="skills__bar skills__fls">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">20%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bx-terminal skills__icon'></i>
+                                <span class="skills__name lato-bold">Linux</span>
+                            </div>
+                            <div class="skills__bar skills__linux">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">10%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bx-data skills__icon'></i>                                                       
+                                <span class="skills__name lato-bold">Bases de Datos</span>
+                            </div>
+                            <div class="skills__bar skills__dba">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">15%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>              
+                        <img src="assets/img/learningskills.jpg" alt="" class="skills__img">
+                    </div>
+                </div>
+
+
+                
+
+
+            </section>
+
+
+
+            <!--===== CONTACT =====-->
+            <!--<section class="contact section" id="contact">
+                <h2 class="section-title">Contacto</h2>
+
+                <div class="contact__container bd-grid">
+                    <form action="" class="contact__form">
+                        <input type="text" placeholder="Tu nombre..." class="contact__input lato-thin-italic">
+                        <input type="mail" placeholder="Tu email..." class="contact__input lato-thin-italic">
+                        <textarea name="" id="" cols="0" rows="10" placeholder="Inserta tu mensaje aqui..." class="contact__input lato-thin-italic"></textarea>
+                        <input type="submit" value="Enviar" class="contact__button button nixie-one-regular">
+                    </form>
+                </div>
+            </section>-->
+
+
+
+
+
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contacto</h2>
+                <div class="about__container contact_new bd-grid">
+                    <div>
+                        <br>
+                        <br>
+                        <h2 class="about__subtitle">   
+                            <a href="https://www.linkedin.com/in/carlos-calderon-soriano" target="_blank" class="home__social-icon"><i class='bx bxl-linkedin bx-tada-hover'></i>&nbsp;&nbsp;&nbsp;<span class="my_name_contact">Encuéntrame en LinkedIn</span> </a>
+                        </h2>
+                        <br>
+                        <h2 class="about__subtitle">   
+                            <a href="mailto:ccalderons.studyandwork@gmail.com" target="_self" class="home__social-icon"><i class='bx bx-envelope bx-tada-hover'></i>&nbsp;&nbsp;&nbsp;<span class="my_name_contact">Envíame un correo</span> </a>
+                        </h2>
+                        <br>
+                        <h2 class="about__subtitle">   
+                            <a href="https://wa.me/5359940527" target="_blank" class="home__social-icon"><i class='bx bxl-whatsapp bx-tada-hover'></i>&nbsp;&nbsp;&nbsp;<span class="my_name_contact">Envíame un mensaje</span> </a>
+                        </h2>
+                        <br>
+                        <h2 class="about__subtitle">   
+                            <a href="https://t.me/charlie_38king" target="_blank" class="home__social-icon"><i class='bx bxl-telegram bx-tada-hover'></i>&nbsp;&nbsp;&nbsp;<span class="my_name_contact">Envíame un DM</span> </a>
+                        </h2>
+                        <br>
+                    </div>  
+                    <div class="about__img">
+                        <img src="assets/img/about.jpg" alt="">
+                    </div>                                     
+                </div>
+            </section>
+
+
+
+
+
+
+
+
+
+        </main>
+
+
+
+
+
+
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <div class="footer__social">
+                <a href="https://www.instagram.com/charlie_38king" target="_blank" class="footer__icon"><i class='bx bxl-instagram-alt' ></i></a>
+                <a href="https://x.com/charlie_38king" target="_blank" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+                <a href="https://www.tumblr.com/charlie38king" target="_blank" class="footer__icon"><i class='bx bxl-tumblr' ></i></a>
+                <a href="https://www.linkedin.com/in/carlos-calderon-soriano" target="_blank" class="footer__icon"><i class='bx bxl-linkedin' ></i></a>
+                <br>
+                <br>
+                <a href="https://www.behance.net/carloscald7f32" target="_blank" class="footer__icon"><i class='bx bxl-behance' ></i></a>
+                <a href="https://dribbble.com/charlie_38king" target="_blank" class="footer__icon"><i class='bx bxl-dribbble' ></i></a>
+                <a href="https://github.com/charlie38king" target="_blank" class="footer__icon"><i class='bx bxl-github' ></i></a>
+                <a href="https://codepen.io/charlie_38king" target="_blank" class="footer__icon"><i class='bx bxl-codepen' ></i></a>
+            </div>
+            <p class="lato-thin">Este sitio web fue hecho con <i class='bx bx-heart' ></i> y <i class='bx bx-coffee' ></i> por <a href="https://www.instagram.com/the_rothlogan" target="_blank" class="trlp lato-light">The Roth/Logan Project</a></p> 
+            <p class="lato-thin">&#169;
+                <script type=text/javascript>
+                    var d = new Date();
+                    document.write(d.getFullYear());
+                  </script>.
+                Todos los derechos reservados</p>
+        </footer>
+
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
