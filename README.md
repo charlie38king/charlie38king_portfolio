@@ -5,6 +5,7 @@ Este repositorio contiene el código de mi portafolio personal. Aquí podrás en
 ## Tecnologías Utilizadas
 HTML5,
 CSS3,
+SASS,
 JavaScript
 
 ## Contribuciones
