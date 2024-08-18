@@ -3,8 +3,8 @@
 Este repositorio contiene el código de mi portafolio personal. Aquí podrás encontrar algunos enlaces de mis proyectos más destacados, habilidades y experiencias profesionales. El portafolio está diseñado para ser responsive y fácil de navegar, utilizando HTML, CSS y JavaScript principalmente.
 
 ## Tecnologías Utilizadas
-HTML5
-CSS3
+HTML5,
+CSS3,
 JavaScript
 
 ## Contribuciones
